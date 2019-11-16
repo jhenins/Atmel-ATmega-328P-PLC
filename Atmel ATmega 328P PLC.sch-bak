@@ -1,0 +1,99 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "Atmel ATmega 328P PLC"
+Date "2019-11-16"
+Rev "v.1.0"
+Comp ""
+Comment1 "Janis Henins"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D?
+U 1 1 5DD13AFF
+P 7850 1850
+F 0 "D?" V 7889 1733 50  0000 R CNN
+F 1 "LED" V 7798 1733 50  0000 R CNN
+F 2 "" H 7850 1850 50  0001 C CNN
+F 3 "~" H 7850 1850 50  0001 C CNN
+	1    7850 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD1493B
+P 7850 2100
+F 0 "#PWR?" H 7850 1850 50  0001 C CNN
+F 1 "GND" H 7855 1927 50  0000 C CNN
+F 2 "" H 7850 2100 50  0001 C CNN
+F 3 "" H 7850 2100 50  0001 C CNN
+	1    7850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 5DD14C78
+P 7850 950
+F 0 "#PWR?" H 7850 800 50  0001 C CNN
+F 1 "+24V" H 7865 1123 50  0000 C CNN
+F 2 "" H 7850 950 50  0001 C CNN
+F 3 "" H 7850 950 50  0001 C CNN
+	1    7850 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DD13015
+P 7850 1400
+F 0 "R?" H 7920 1446 50  0000 L CNN
+F 1 "R" H 7920 1355 50  0000 L CNN
+F 2 "" V 7780 1400 50  0001 C CNN
+F 3 "~" H 7850 1400 50  0001 C CNN
+	1    7850 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L freetronics_schematic:DIODE D?
+U 1 1 5DD126CE
+P 7500 1100
+F 0 "D?" H 7500 1292 40  0000 C CNN
+F 1 "DIODE" H 7500 1216 40  0000 C CNN
+F 2 "" H 7500 1100 60  0000 C CNN
+F 3 "" H 7500 1100 60  0000 C CNN
+	1    7500 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD11E47
+P 7200 1350
+F 0 "#PWR?" H 7200 1100 50  0001 C CNN
+F 1 "GND" H 7205 1177 50  0000 C CNN
+F 2 "" H 7200 1350 50  0001 C CNN
+F 3 "" H 7200 1350 50  0001 C CNN
+	1    7200 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5DD0ECE6
+P 6850 1200
+F 0 "J?" H 6768 875 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 6768 966 50  0000 C CNN
+F 2 "" H 6850 1200 50  0001 C CNN
+F 3 "~" H 6850 1200 50  0001 C CNN
+	1    6850 1200
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 750  1000 2250 1800
+U 5DD82F75
+F0 "Atmel ATmega 328P PLC INPUTS" 50
+F1 "Atmel ATmega 328P PLC INPUTS.sch" 50
+$EndSheet
+$EndSCHEMATC
