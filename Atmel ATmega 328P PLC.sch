@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:Atmel ATmega 328P PLC-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "Atmel ATmega 328P PLC"
-Date "2019-11-16"
+Date "2019-11-21"
 Rev "v.1.0"
 Comp ""
 Comment1 "Janis Henins"
@@ -14,86 +15,538 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:LED D?
+L Device:LED D2
 U 1 1 5DD13AFF
-P 5550 2050
-F 0 "D?" V 5589 1933 50  0000 R CNN
-F 1 "LED" V 5498 1933 50  0000 R CNN
-F 2 "" H 5550 2050 50  0001 C CNN
-F 3 "~" H 5550 2050 50  0001 C CNN
-	1    5550 2050
+P 4700 1850
+F 0 "D2" V 4739 1733 50  0000 R CNN
+F 1 "LED" V 4648 1733 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4700 1850 50  0001 C CNN
+F 3 "~" H 4700 1850 50  0001 C CNN
+	1    4700 1850
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR010
 U 1 1 5DD1493B
-P 5550 2300
-F 0 "#PWR?" H 5550 2050 50  0001 C CNN
-F 1 "GND" H 5555 2127 50  0000 C CNN
-F 2 "" H 5550 2300 50  0001 C CNN
-F 3 "" H 5550 2300 50  0001 C CNN
-	1    5550 2300
+P 4700 2100
+F 0 "#PWR010" H 4700 1850 50  0001 C CNN
+F 1 "GND" H 4705 1927 50  0000 C CNN
+F 2 "" H 4700 2100 50  0001 C CNN
+F 3 "" H 4700 2100 50  0001 C CNN
+	1    4700 2100
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+24V #PWR?
+L power:+24V #PWR09
 U 1 1 5DD14C78
-P 5550 1150
-F 0 "#PWR?" H 5550 1000 50  0001 C CNN
-F 1 "+24V" H 5565 1323 50  0000 C CNN
-F 2 "" H 5550 1150 50  0001 C CNN
-F 3 "" H 5550 1150 50  0001 C CNN
-	1    5550 1150
+P 4700 950
+F 0 "#PWR09" H 4700 800 50  0001 C CNN
+F 1 "+24V" H 4715 1123 50  0000 C CNN
+F 2 "" H 4700 950 50  0001 C CNN
+F 3 "" H 4700 950 50  0001 C CNN
+	1    4700 950 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 5DD13015
-P 5550 1600
-F 0 "R?" H 5620 1646 50  0000 L CNN
-F 1 "R" H 5620 1555 50  0000 L CNN
-F 2 "" V 5480 1600 50  0001 C CNN
-F 3 "~" H 5550 1600 50  0001 C CNN
-	1    5550 1600
+P 4700 1400
+F 0 "R1" H 4770 1446 50  0000 L CNN
+F 1 "R" H 4770 1355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4630 1400 50  0001 C CNN
+F 3 "~" H 4700 1400 50  0001 C CNN
+	1    4700 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L freetronics_schematic:DIODE D?
+L Device:D D1
 U 1 1 5DD126CE
-P 5200 1300
-F 0 "D?" H 5200 1492 40  0000 C CNN
-F 1 "DIODE" H 5200 1416 40  0000 C CNN
-F 2 "" H 5200 1300 60  0000 C CNN
-F 3 "" H 5200 1300 60  0000 C CNN
-	1    5200 1300
-	1    0    0    -1  
+P 4350 1100
+F 0 "D1" H 4350 900 40  0000 C CNN
+F 1 "D" H 4350 1000 40  0000 C CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 4350 1100 60  0001 C CNN
+F 3 "" H 4350 1100 60  0000 C CNN
+	1    4350 1100
+	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR03
 U 1 1 5DD11E47
-P 4900 1550
-F 0 "#PWR?" H 4900 1300 50  0001 C CNN
-F 1 "GND" H 4905 1377 50  0000 C CNN
-F 2 "" H 4900 1550 50  0001 C CNN
-F 3 "" H 4900 1550 50  0001 C CNN
-	1    4900 1550
+P 4050 1350
+F 0 "#PWR03" H 4050 1100 50  0001 C CNN
+F 1 "GND" H 4055 1177 50  0000 C CNN
+F 2 "" H 4050 1350 50  0001 C CNN
+F 3 "" H 4050 1350 50  0001 C CNN
+	1    4050 1350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J4
 U 1 1 5DD0ECE6
-P 4550 1400
-F 0 "J?" H 4468 1075 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 4468 1166 50  0000 C CNN
-F 2 "" H 4550 1400 50  0001 C CNN
-F 3 "~" H 4550 1400 50  0001 C CNN
-	1    4550 1400
+P 3700 1200
+F 0 "J4" H 3618 875 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 3618 966 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 3700 1200 50  0001 C CNN
+F 3 "~" H 3700 1200 50  0001 C CNN
+	1    3700 1200
 	-1   0    0    1   
 $EndComp
 $Sheet
-S 750  1000 2250 1800
+S 650  850  1650 1700
 U 5DD82F75
 F0 "Atmel ATmega 328P PLC INPUTS" 50
 F1 "Atmel ATmega 328P PLC INPUTS.sch" 50
+F2 "PC0" O L 650 1100 50 
+F3 "PC1" O L 650 1300 50 
+F4 "PD7" O L 650 1500 50 
+F5 "PB0" O L 650 1700 50 
+F6 "PD2" O L 650 1900 50 
+F7 "PD3" O L 650 2100 50 
+F8 "PD4" O L 650 2300 50 
+$EndSheet
+$Comp
+L power:+24V #PWR012
+U 1 1 5DD752F0
+P 5650 1000
+F 0 "#PWR012" H 5650 850 50  0001 C CNN
+F 1 "+24V" H 5665 1173 50  0000 C CNN
+F 2 "" H 5650 1000 50  0001 C CNN
+F 3 "" H 5650 1000 50  0001 C CNN
+	1    5650 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5DD75712
+P 5650 1300
+F 0 "C2" H 5765 1346 50  0000 L CNN
+F 1 "C" H 5765 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5688 1150 50  0001 C CNN
+F 3 "~" H 5650 1300 50  0001 C CNN
+	1    5650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5DD75F9B
+P 6650 1300
+F 0 "C3" H 6765 1346 50  0000 L CNN
+F 1 "C" H 6765 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6688 1150 50  0001 C CNN
+F 3 "~" H 6650 1300 50  0001 C CNN
+	1    6650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DD76690
+P 7000 1300
+F 0 "R2" H 7070 1346 50  0000 L CNN
+F 1 "R" H 7070 1255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6930 1300 50  0001 C CNN
+F 3 "~" H 7000 1300 50  0001 C CNN
+	1    7000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5DD76B97
+P 7000 1800
+F 0 "D3" V 7039 1683 50  0000 R CNN
+F 1 "LED" V 6948 1683 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7000 1800 50  0001 C CNN
+F 3 "~" H 7000 1800 50  0001 C CNN
+	1    7000 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5DD772CD
+P 7000 2150
+F 0 "#PWR014" H 7000 1900 50  0001 C CNN
+F 1 "GND" H 7005 1977 50  0000 C CNN
+F 2 "" H 7000 2150 50  0001 C CNN
+F 3 "" H 7000 2150 50  0001 C CNN
+	1    7000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_PMIC-Voltage-Regulators-Linear:MC7805BDTRKG U2
+U 1 1 5DD78DE0
+P 6150 1150
+F 0 "U2" H 6150 1437 60  0000 C CNN
+F 1 "MC7805BDTRKG" H 6150 1331 60  0000 C CNN
+F 2 "digikey-footprints:TO-252-3" H 6350 1350 60  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/MC7800-D.PDF" H 6350 1450 60  0001 L CNN
+F 4 "MC7805BDTRKGOSCT-ND" H 6350 1550 60  0001 L CNN "Digi-Key_PN"
+F 5 "MC7805BDTRKG" H 6350 1650 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 6350 1750 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Regulators - Linear" H 6350 1850 60  0001 L CNN "Family"
+F 8 "http://www.onsemi.com/pub/Collateral/MC7800-D.PDF" H 6350 1950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/MC7805BDTRKG/MC7805BDTRKGOSCT-ND/1139742" H 6350 2050 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC REG LINEAR 5V 1A DPAK" H 6350 2150 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 6350 2250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6350 2350 60  0001 L CNN "Status"
+	1    6150 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 5DD7CC4B
+P 7000 1000
+F 0 "#PWR013" H 7000 850 50  0001 C CNN
+F 1 "+5V" H 7015 1173 50  0000 C CNN
+F 2 "" H 7000 1000 50  0001 C CNN
+F 3 "" H 7000 1000 50  0001 C CNN
+	1    7000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U1
+U 1 1 5DD8327B
+P 5550 4100
+F 0 "U1" H 5550 2511 50  0000 C CNN
+F 1 "ATmega328P-AU" H 5550 2420 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 5550 4100 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5550 4100 50  0001 C CNN
+	1    5550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 5DD85BFC
+P 5550 2450
+F 0 "#PWR011" H 5550 2300 50  0001 C CNN
+F 1 "+5V" H 5565 2623 50  0000 C CNN
+F 2 "" H 5550 2450 50  0001 C CNN
+F 3 "" H 5550 2450 50  0001 C CNN
+	1    5550 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5DD86279
+P 4600 2750
+F 0 "C1" H 4715 2796 50  0000 L CNN
+F 1 "C" H 4715 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4638 2600 50  0001 C CNN
+F 3 "~" H 4600 2750 50  0001 C CNN
+	1    4600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5DD872D2
+P 4600 3100
+F 0 "#PWR08" H 4600 2850 50  0001 C CNN
+F 1 "GND" H 4605 2927 50  0000 C CNN
+F 2 "" H 4600 3100 50  0001 C CNN
+F 3 "" H 4600 3100 50  0001 C CNN
+	1    4600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5DD8780C
+P 8000 3750
+F 0 "C5" H 7885 3704 50  0000 R CNN
+F 1 "C" H 7885 3795 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8038 3600 50  0001 C CNN
+F 3 "~" H 8000 3750 50  0001 C CNN
+	1    8000 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5DD88A53
+P 8000 4100
+F 0 "C6" H 7885 4054 50  0000 R CNN
+F 1 "C" H 7885 4145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8038 3950 50  0001 C CNN
+F 3 "~" H 8000 4100 50  0001 C CNN
+	1    8000 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5DD88C81
+P 8300 4250
+F 0 "#PWR017" H 8300 4000 50  0001 C CNN
+F 1 "GND" H 8305 4077 50  0000 C CNN
+F 2 "" H 8300 4250 50  0001 C CNN
+F 3 "" H 8300 4250 50  0001 C CNN
+	1    8300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5DD8A8E5
+P 7400 3900
+F 0 "Y1" V 7354 4031 50  0000 L CNN
+F 1 "Crystal" V 7445 4031 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_EuroQuartz_MT-4Pin_3.2x2.5mm_HandSoldering" H 7400 3900 50  0001 C CNN
+F 3 "~" H 7400 3900 50  0001 C CNN
+	1    7400 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DD9101F
+P 8400 3450
+F 0 "R4" H 8470 3496 50  0000 L CNN
+F 1 "R" H 8470 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8330 3450 50  0001 C CNN
+F 3 "~" H 8400 3450 50  0001 C CNN
+	1    8400 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5DD91025
+P 7400 3400
+F 0 "D4" V 7439 3283 50  0000 R CNN
+F 1 "LED" V 7348 3283 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7400 3400 50  0001 C CNN
+F 3 "~" H 7400 3400 50  0001 C CNN
+	1    7400 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5DD9102B
+P 7600 3550
+F 0 "#PWR016" H 7600 3300 50  0001 C CNN
+F 1 "GND" H 7605 3377 50  0000 C CNN
+F 2 "" H 7600 3550 50  0001 C CNN
+F 3 "" H 7600 3550 50  0001 C CNN
+	1    7600 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5DD9D11F
+P 7500 4600
+F 0 "C4" H 7385 4554 50  0000 R CNN
+F 1 "C" H 7385 4645 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7538 4450 50  0001 C CNN
+F 3 "~" H 7500 4600 50  0001 C CNN
+	1    7500 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DD9D5AF
+P 7150 4450
+F 0 "R3" H 7220 4496 50  0000 L CNN
+F 1 "R" H 7220 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7080 4450 50  0001 C CNN
+F 3 "~" H 7150 4450 50  0001 C CNN
+	1    7150 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR015
+U 1 1 5DD9E1DF
+P 7150 4250
+F 0 "#PWR015" H 7150 4100 50  0001 C CNN
+F 1 "+5V" H 7165 4423 50  0000 C CNN
+F 2 "" H 7150 4250 50  0001 C CNN
+F 3 "" H 7150 4250 50  0001 C CNN
+	1    7150 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5DDA097F
+P 8500 5000
+F 0 "#PWR018" H 8500 4750 50  0001 C CNN
+F 1 "GND" H 8505 4827 50  0000 C CNN
+F 2 "" H 8500 5000 50  0001 C CNN
+F 3 "" H 8500 5000 50  0001 C CNN
+	1    8500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 5DDA991A
+P 3550 4400
+F 0 "J1" H 3658 4781 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 3658 4690 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3550 4400 50  0001 C CNN
+F 3 "~" H 3550 4400 50  0001 C CNN
+	1    3550 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J3
+U 1 1 5DDAAEC6
+P 3600 3750
+F 0 "J3" H 3650 4067 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 3650 3976 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical" H 3600 3750 50  0001 C CNN
+F 3 "~" H 3600 3750 50  0001 C CNN
+	1    3600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 5DDAB821
+P 3550 5400
+F 0 "J2" H 3658 5681 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 3658 5590 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3550 5400 50  0001 C CNN
+F 3 "~" H 3550 5400 50  0001 C CNN
+	1    3550 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x02 SW1
+U 1 1 5DDB0D96
+P 8050 4900
+F 0 "SW1" H 8050 5267 50  0000 C CNN
+F 1 "SW_DIP_x02" H 8050 5176 50  0000 C CNN
+F 2 "freetronics_footprints:SW_PUSHBUTTON_SMD" H 8050 4900 50  0001 C CNN
+F 3 "~" H 8050 4900 50  0001 C CNN
+	1    8050 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 5DDB6C41
+P 4150 3600
+F 0 "#PWR06" H 4150 3450 50  0001 C CNN
+F 1 "+5V" H 4165 3773 50  0000 C CNN
+F 2 "" H 4150 3600 50  0001 C CNN
+F 3 "" H 4150 3600 50  0001 C CNN
+	1    4150 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5DDB6F5F
+P 4150 3900
+F 0 "#PWR07" H 4150 3650 50  0001 C CNN
+F 1 "GND" H 4155 3727 50  0000 C CNN
+F 2 "" H 4150 3900 50  0001 C CNN
+F 3 "" H 4150 3900 50  0001 C CNN
+	1    4150 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5DDB90DB
+P 4050 5250
+F 0 "#PWR04" H 4050 5100 50  0001 C CNN
+F 1 "+5V" H 4065 5423 50  0000 C CNN
+F 2 "" H 4050 5250 50  0001 C CNN
+F 3 "" H 4050 5250 50  0001 C CNN
+	1    4050 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5DDB953A
+P 4050 5650
+F 0 "#PWR05" H 4050 5400 50  0001 C CNN
+F 1 "GND" H 4055 5477 50  0000 C CNN
+F 2 "" H 4050 5650 50  0001 C CNN
+F 3 "" H 4050 5650 50  0001 C CNN
+	1    4050 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 3750 2    50   Output ~ 0
+MOSI
+Text GLabel 3400 3650 0    50   Input ~ 0
+MISO
+Text GLabel 3400 3750 0    50   Output ~ 0
+SCK
+Text GLabel 3400 3850 0    50   Input ~ 0
+RESET
+Text GLabel 3750 4200 2    50   Output ~ 0
+DTR
+Text GLabel 3750 4300 2    50   Output ~ 0
+TX
+Text GLabel 3750 4400 2    50   Input ~ 0
+RX
+$Comp
+L power:+5V #PWR01
+U 1 1 5DDBDDEE
+P 4000 4450
+F 0 "#PWR01" H 4000 4300 50  0001 C CNN
+F 1 "+5V" H 4015 4623 50  0000 C CNN
+F 2 "" H 4000 4450 50  0001 C CNN
+F 3 "" H 4000 4450 50  0001 C CNN
+	1    4000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5DDBDDF4
+P 4000 4750
+F 0 "#PWR02" H 4000 4500 50  0001 C CNN
+F 1 "GND" H 4005 4577 50  0000 C CNN
+F 2 "" H 4000 4750 50  0001 C CNN
+F 3 "" H 4000 4750 50  0001 C CNN
+	1    4000 4750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4950 3100
+NoConn ~ 4950 3200
+NoConn ~ 6150 4000
+NoConn ~ 6150 4100
+Text GLabel 6150 2900 2    50   Input ~ 0
+PB0
+Text GLabel 6150 3000 2    50   Output ~ 0
+PB1
+Text GLabel 6150 3100 2    50   Output ~ 0
+PB2
+Text GLabel 6500 3200 2    50   Output ~ 0
+PB3
+Text GLabel 6500 3100 1    50   Input ~ 0
+MISO
+Text GLabel 6150 3300 2    50   Input ~ 0
+MOSI
+Text GLabel 6900 3400 2    50   Input ~ 0
+SCK
+Text GLabel 6150 3800 2    50   Input ~ 0
+PC0
+Text GLabel 6150 3900 2    50   Input ~ 0
+PC1
+Text GLabel 6150 4200 2    50   Input ~ 0
+SDA
+Text GLabel 6150 4300 2    50   Input ~ 0
+SCL
+Text GLabel 3750 5400 2    50   Input ~ 0
+SDA
+Text GLabel 3750 5500 2    50   Input ~ 0
+SCL
+Text GLabel 6400 4400 2    50   Input ~ 0
+RESET
+Text GLabel 6150 4600 2    50   Input ~ 0
+RX
+Text GLabel 6150 4700 2    50   Input ~ 0
+TX
+Text GLabel 6150 4800 2    50   Input ~ 0
+PD2
+Text GLabel 6150 5300 2    50   Input ~ 0
+PD7
+Text GLabel 6150 4900 2    50   Input ~ 0
+PD3
+Text GLabel 6150 5000 2    50   Input ~ 0
+PD4
+Text GLabel 6150 5100 2    50   Output ~ 0
+PD5
+Text GLabel 6150 5200 2    50   Output ~ 0
+PD6
+$Sheet
+S 9200 850  1750 1700
+U 5DD64443
+F0 "Atmel ATmega 328P PLC OUTPUTS" 50
+F1 "Atmel ATmega 328P PLC OUTPUTS.sch" 50
+F2 "PD5" I L 9200 1100 50 
+F3 "PD6" I L 9200 1300 50 
+F4 "PB1" I L 9200 1500 50 
+F5 "PB2" I L 9200 1700 50 
+F6 "PB3" I L 9200 1900 50 
 $EndSheet
 $EndSCHEMATC
