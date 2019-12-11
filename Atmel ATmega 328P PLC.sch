@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "Atmel ATmega 328P PLC"
-Date "2019-11-21"
+Date "2019-12-11"
 Rev "v.1.0"
 Comp ""
 Comment1 "Janis Henins"
@@ -752,7 +752,7 @@ U 1 1 5DDAAEC6
 P 1450 4800
 F 0 "J3" H 1500 5117 50  0000 C CNN
 F 1 "Conn_02x03_Odd_Even" H 1500 5026 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical" H 1450 4800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 1450 4800 50  0001 C CNN
 F 3 "~" H 1450 4800 50  0001 C CNN
 	1    1450 4800
 	1    0    0    -1  

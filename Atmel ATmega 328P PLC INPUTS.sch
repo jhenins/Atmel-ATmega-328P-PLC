@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "Atmel ATmega 328P PLC INPUTS"
-Date "2019-11-21"
+Date "2019-12-11"
 Rev "v1.0"
 Comp ""
 Comment1 "Janis Henins"
